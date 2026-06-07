@@ -101,11 +101,13 @@ html, body {
 
   .hero__title {
     font-size: 44px;
-    text-align: left;
+    text-align: center;
+    width: 100%;
   }
 
   .hero__label {
-    text-align: left;
+    text-align: center;
+    width: 100%;
   }
 }
 
