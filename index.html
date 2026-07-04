@@ -2,11 +2,12 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>RISA — Encuesta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RISA — Incubadora de mujeres emprendedoras</title>
+  <meta name="description" content="Cursos prácticos, mentoría 1 a 1, recursos descargables y una comunidad activa de mujeres emprendedoras, todo en un solo lugar, desde €19/año." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Albert+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@300..700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@44,300,0,0&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <!-- Meta Pixel Code -->
   <script>
@@ -25,33 +26,199 @@
   src="https://www.facebook.com/tr?id=1549475480128389&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Meta Pixel Code -->
+  <noscript>
+    <style>
+      .intro { display: none !important; }
+      .hero__text > *,
+      .reveal { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
 </head>
 <body>
 
+  <!-- Intro splash -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <img src="assets-landing/logo.svg" alt="" class="intro__logo" />
+  </div>
+
   <!-- Navbar -->
-  <nav class="navbar">
-    <span class="navbar__logo">RISA</span>
-    <span class="navbar__tagline">Incubadora de mujeres</span>
+  <nav class="navbar" id="top">
+    <div class="navbar__inner">
+      <a href="#top" class="navbar__logo">
+        <img src="assets-landing/logo.svg" alt="RISA" width="49" height="18" />
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="#conoce-risa">Conoce RISA</a></li>
+        <li><a href="#que-ofrecemos">Qué ofrecemos</a></li>
+        <li><a href="#planes">Nuestros planes</a></li>
+        <li><a href="#comunidad">Únete al RISA Club</a></li>
+        <li><a href="encuesta.html">Encuesta</a></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- Hero -->
-  <main class="hero">
-    <p class="hero__label">ENCUESTA DE 5 MINUTOS</p>
-    <h1 class="hero__title">¿Cómo es emprender siendo mujer en España y en LATAM?</h1>
-
-    <!-- Google Form embed -->
-    <div class="form-wrapper">
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSdtHqwRq4pap4GieKgZHvoSJb9RpfkNajUtB-b8qMIWnhn3cg/viewform?embedded=true"
-        width="100%"
-        height="900"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        title="Encuesta RISA"
-      >Cargando…</iframe>
+  <header class="hero">
+    <div class="hero__content">
+      <div class="hero__text">
+        <span class="pill">RISA, INCUBADORA DE MUJERES EMPRENDEDORAS</span>
+        <h1 class="hero__title">Todo lo que necesitas para lanzar tu negocio, paso a paso</h1>
+        <p class="hero__subtitle">Cursos prácticos, mentoría 1 a 1, recursos descargables y una comunidad activa de mujeres emprendedoras, todo en un solo lugar, desde €19/año.</p>
+        <div class="hero__buttons">
+          <a href="#que-ofrecemos" class="btn btn--primary">Ver qué ofrecemos</a>
+          <a href="#planes" class="btn btn--link">Conoce nuestros planes</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="assets-landing/hero-image.png" alt="Mujer emprendedora trabajando en su laptop" width="687" height="620" />
+      </div>
     </div>
-  </main>
+  </header>
 
+  <!-- Conoce RISA -->
+  <section class="about" id="conoce-risa">
+    <h2 class="about__heading reveal">Incubadora de mujeres emprendedoras</h2>
+    <div class="about__content">
+      <div class="about__block reveal">
+        <span class="eyebrow">QUÉ ES RISA</span>
+        <p>Somos una incubadora dedicada a empoderar a mujeres emprendedoras en LATAM y España. Nuestro objetivo es <strong>ayudar a convertir ideas en negocios exitosos</strong>, ofreciendo capacitación actualizada y herramientas prácticas que faciliten el crecimiento y desarrollo de sus proyectos. Creemos firmemente en el potencial de las mujeres y trabajamos para que cada una pueda alcanzar sus metas.</p>
+      </div>
+      <div class="about__block reveal">
+        <span class="eyebrow">A QUIÉNES AYUDAMOS</span>
+        <p>Si eres mujer que tiene una idea de negocio o que ya tiene un proyecto funcionando pero quiere escalarlo, RISA es para ti.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qué ofrecemos -->
+  <section class="benefits" id="que-ofrecemos">
+    <h2 class="benefits__heading reveal">Qué tenemos para ti</h2>
+    <div class="benefits__grid">
+      <article class="benefit reveal">
+        <span class="material-symbols-outlined benefit__icon">auto_stories</span>
+        <span class="benefit__divider"></span>
+        <h3>Aprendizaje didáctico</h3>
+        <p>Brindamos cursos que te ayudan a desarrollar todos los aspectos que necesitas definir de tu negocio y durante su lanzamiento.</p>
+      </article>
+      <article class="benefit reveal">
+        <span class="material-symbols-outlined benefit__icon">add_reaction</span>
+        <span class="benefit__divider"></span>
+        <h3>Comunidad activa</h3>
+        <p>Creemos que la conexión entre mujeres emprendedoras es clave para seguir potenciándonos.</p>
+      </article>
+      <article class="benefit reveal">
+        <span class="material-symbols-outlined benefit__icon">autorenew</span>
+        <span class="benefit__divider"></span>
+        <h3>Contenido actualizado</h3>
+        <p>Como sabemos que el conocimiento va modificándose, mantenemos los recursos actualizados constantemente.</p>
+      </article>
+      <article class="benefit reveal">
+        <span class="material-symbols-outlined benefit__icon">adaptive_audio_mic</span>
+        <span class="benefit__divider"></span>
+        <h3>Mentoría personalizada</h3>
+        <p>Ten espacios 1 a 1 con nuestro equipo para hacer un seguimiento detallado de tu proyecto.</p>
+      </article>
+      <article class="benefit reveal">
+        <span class="material-symbols-outlined benefit__icon">format_image_left</span>
+        <span class="benefit__divider"></span>
+        <h3>Recursos reutilizables</h3>
+        <p>Además de los contenidos de los diferentes módulos, te brindamos plantillas reutilizables para que puedas usarla para tu proyecto.</p>
+      </article>
+      <article class="benefit reveal">
+        <span class="material-symbols-outlined benefit__icon">euro</span>
+        <span class="benefit__divider"></span>
+        <h3>Acceso por una inversión mínima</h3>
+        <p>Por solo €19 tienes acceso por 1 año a la plataforma para que puedas consultar el contenido las veces que necesites.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Nuestros planes -->
+  <section class="pricing" id="planes">
+    <div class="pricing__title reveal">
+      <h2>Nuestros planes</h2>
+      <p>Elige el que más se ajusta con tus necesidades</p>
+    </div>
+    <div class="pricing__cards">
+      <div class="plan-card plan-card--featured reveal">
+        <div class="plan-card__price">
+          <span class="plan-card__amount">€19</span>
+          <span class="plan-card__name">Standard</span>
+        </div>
+        <ul class="plan-card__items">
+          <li><img src="assets-landing/icon_check.svg" alt="" /> Cursos por etapa</li>
+          <li><img src="assets-landing/icon_check.svg" alt="" /> Herramientas básicas</li>
+          <li><img src="assets-landing/icon_check.svg" alt="" /> Comunidad</li>
+          <li><img src="assets-landing/icon_check.svg" alt="" /> Plantillas y recursos adicionales</li>
+          <li class="is-excluded"><img src="assets-landing/icon_cross.svg" alt="" /> Pack completo herramientas</li>
+          <li class="is-excluded"><img src="assets-landing/icon_cross.svg" alt="" /> Mentorías grupales</li>
+        </ul>
+        <a href="#planes" class="btn btn--plan">Más sobre Plan Standard</a>
+      </div>
+      <div class="plan-card reveal">
+        <span class="pill plan-card__badge">PRÓXIMAMENTE</span>
+        <div class="plan-card__price">
+          <span class="plan-card__amount">€35</span>
+          <span class="plan-card__name">Pro</span>
+        </div>
+        <ul class="plan-card__items">
+          <li><img src="assets-landing/icon_check.svg" alt="" /> Cursos por etapa</li>
+          <li><img src="assets-landing/icon_check.svg" alt="" /> Herramientas básicas</li>
+          <li><img src="assets-landing/icon_check.svg" alt="" /> Pack completo herramientas</li>
+          <li><img src="assets-landing/icon_check.svg" alt="" /> Comunidad</li>
+          <li><img src="assets-landing/icon_check.svg" alt="" /> Mentorías grupales</li>
+          <li><img src="assets-landing/icon_check.svg" alt="" /> Plantillas y recursos adicionales</li>
+        </ul>
+        <a href="#planes" class="btn btn--plan">Más sobre Plan Pro</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comunidad / Whatsapp -->
+  <section class="community" id="comunidad">
+    <div class="community__card">
+      <div class="community__text reveal">
+        <h2>Únete a nuestra comunidad de Whatsapp</h2>
+        <p>Encuentra un espacio para conectar con otras mujeres emprendedoras y conocer tips que te ayudarán en el día a día con tu negocio.</p>
+        <a href="#comunidad" class="btn btn--secondary">Unirme a la comunidad</a>
+      </div>
+      <div class="community__image reveal">
+        <img src="assets-landing/banner-image.png" alt="Comunidad de RISA en Whatsapp" width="492" height="312" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="assets-landing/logo.svg" alt="RISA" class="footer__logo" width="49" height="18" />
+        <p>Incubadora de mujeres y para mujeres emprendedoras en Latam y España.</p>
+        <span class="footer__location">De Madrid</span>
+      </div>
+      <nav class="footer__links" aria-label="Enlaces del pie de página">
+        <ul>
+          <li><a href="#conoce-risa">Conoce RISA</a></li>
+          <li><a href="#que-ofrecemos">Qué ofrecemos</a></li>
+          <li><a href="#planes">Nuestros planes</a></li>
+        </ul>
+        <a href="#comunidad" class="footer__contact">Contáctanos</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 RISA</span>
+      <div class="footer__socials">
+        <a href="#" aria-label="LinkedIn"><img src="assets-landing/logo Linkedin.svg" alt="" width="24" height="24" /></a>
+        <a href="https://www.instagram.com/risa.emprende/?hl=es" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets-landing/logo IG.svg" alt="" width="24" height="24" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
