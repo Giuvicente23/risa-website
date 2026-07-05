@@ -5,14 +5,6 @@
 }
 
 @font-face {
-  font-family: 'PP Pangaia';
-  src: url('fonts/PPPangaia-Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'PP Museum';
   src: url('fonts/PPMuseum-Light.otf') format('opentype');
   font-weight: 300;
@@ -33,7 +25,6 @@
   --grey-600:   #5a5551;
   --white:      #f9f8f7;
 
-  --font-display: 'PP Pangaia', Georgia, serif;
   --font-heading: 'PP Museum', Georgia, serif;
   --font-body: 'Google Sans Flex', 'Segoe UI', sans-serif;
 }
@@ -64,8 +55,8 @@ a {
 }
 
 h1, h2, h3 {
-  font-family: var(--font-display);
-  font-weight: 500;
+  font-family: var(--font-heading);
+  font-weight: 300;
 }
 
 .material-symbols-outlined {
@@ -113,6 +104,10 @@ h1, h2, h3 {
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:not(.btn--link) {
+  width: 100%;
 }
 
 .btn--primary {
@@ -222,7 +217,7 @@ body.intro-active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 24px;
+  padding: 0 12px;
 }
 
 .navbar__logo img {
@@ -294,13 +289,14 @@ body.intro-active {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 40px 24px;
+  padding: 40px 12px;
 }
 
 .hero__text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: 20px;
 }
 
@@ -336,8 +332,6 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
 }
 
 .hero__title {
-  font-family: var(--font-heading);
-  font-weight: 300;
   color: var(--white);
   font-size: 34px;
   line-height: 1.15;
@@ -354,6 +348,7 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
 .hero__buttons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -371,29 +366,22 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
 /* ── Conoce RISA ────────────────────────────────────────── */
 .about {
   background: var(--white);
-  padding: 56px 24px;
+  padding: 56px 12px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 32px;
   max-width: 1440px;
   margin: 0 auto;
-  min-height: calc(100vh - 56px);
-  min-height: calc(100svh - 56px);
 }
 
 .about__heading {
-  order: 2;
   align-self: flex-start;
-  font-family: var(--font-heading);
-  font-weight: 300;
   font-size: 34px;
   line-height: 1.15;
   color: var(--black);
 }
 
 .about__content {
-  order: 1;
   align-self: flex-start;
   display: flex;
   flex-direction: column;
@@ -419,13 +407,11 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
 /* ── Qué ofrecemos ──────────────────────────────────────── */
 .benefits {
   background: var(--blue-100);
-  padding: 56px 24px;
+  padding: 56px 12px;
 }
 
 .benefits__heading {
   text-align: center;
-  font-family: var(--font-heading);
-  font-weight: 300;
   font-size: 34px;
   margin-bottom: 32px;
 }
@@ -471,7 +457,7 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
 /* ── Nuestros planes ────────────────────────────────────── */
 .pricing {
   background: var(--white);
-  padding: 56px 24px;
+  padding: 56px 12px;
 }
 
 .pricing__title {
@@ -484,8 +470,6 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
 }
 
 .pricing__title h2 {
-  font-family: var(--font-heading);
-  font-weight: 300;
   font-size: 34px;
 }
 
@@ -528,14 +512,16 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
 }
 
 .plan-card__amount {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
+  font-weight: 300;
   font-size: 48px;
   line-height: 1;
   color: var(--black);
 }
 
 .plan-card__name {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
+  font-weight: 300;
   font-size: 26px;
   line-height: 1.2;
   color: var(--black);
@@ -577,7 +563,7 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
 /* ── Comunidad / Whatsapp ───────────────────────────────── */
 .community {
   background: var(--white);
-  padding: 48px 24px;
+  padding: 48px 12px;
 }
 
 .community__card {
@@ -599,14 +585,12 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
 .community__text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
-  text-align: left;
+  text-align: center;
 }
 
 .community__text h2 {
-  font-family: var(--font-heading);
-  font-weight: 300;
   font-size: 28px;
   line-height: 1.2;
   color: var(--black);
@@ -662,7 +646,7 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
 .footer {
   background: var(--black);
   color: var(--white);
-  padding: 48px 24px;
+  padding: 48px 12px;
 }
 
 .footer__top {
@@ -732,6 +716,11 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
 
 /* ── Tablet (≥ 768px) ───────────────────────────────────── */
 @media (min-width: 768px) {
+  .btn--primary,
+  .btn--secondary {
+    width: auto;
+  }
+
   .hero__content,
   .about,
   .benefits,
@@ -766,6 +755,8 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
   }
 
   .community__text {
+    align-items: flex-start;
+    text-align: left;
     max-width: 55%;
   }
 
@@ -800,6 +791,12 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
 
   .hero__text {
     flex: 1;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hero__buttons {
+    justify-content: flex-start;
   }
 
   .hero__image {
@@ -814,20 +811,20 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
 
   .about {
     flex-direction: row;
-    justify-content: normal;
+    justify-content: space-between;
     gap: 44px;
     padding: 80px 64px;
+    min-height: calc(100vh - 56px);
+    min-height: calc(100svh - 56px);
   }
 
   .about__heading {
-    order: initial;
     align-self: flex-end;
     flex: 1;
     font-size: 56px;
   }
 
   .about__content {
-    order: initial;
     align-self: flex-start;
     flex: 1;
     gap: 44px;
@@ -901,9 +898,10 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
     right: 0;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 16px;
     background: var(--violet-dark);
-    padding: 16px 24px 24px;
+    padding: 20px 12px 24px;
+    font-size: 20px;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     display: none;
   }
