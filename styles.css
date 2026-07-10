@@ -716,8 +716,8 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
 
 /* ── Tablet (≥ 768px) ───────────────────────────────────── */
 @media (min-width: 768px) {
-  .btn--primary,
-  .btn--secondary {
+  .btn.btn--primary,
+  .btn.btn--secondary {
     width: auto;
   }
 
@@ -813,13 +813,11 @@ body.is-ready .hero__text > *:nth-child(4) { animation-delay: 0.5s; }
     flex-direction: row;
     justify-content: space-between;
     gap: 44px;
-    padding: 80px 64px;
-    min-height: calc(100vh - 56px);
-    min-height: calc(100svh - 56px);
+    padding: 64px 64px;
   }
 
   .about__heading {
-    align-self: flex-end;
+    align-self: flex-start;
     flex: 1;
     font-size: 56px;
   }
